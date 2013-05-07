@@ -1,0 +1,16 @@
+html, body, p { 
+  background: url('../img/hike2.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content{
+  width:800px !important;
+  height:450px!important;
+}
+
+.banner{
+  width:800px !important;
+}

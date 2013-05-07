@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>Bay Area Hiker</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"/>
+<link rel="shortcut icon" href="img/favicon.png" />
+
+<link href=' http://fonts.googleapis.com/css?family=Open+Sans:bold' rel='stylesheet' type='text/css'/>
+<link href=' http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+    
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+<style type="text/css">
+    h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans Bold', arial, serif; }
+    p, body, html { font-family: 'Open Sans', arial, serif; font-weight:normal !important;}
+</style>
+</head>
+
+<body>
+
+
+<!-- Top Banner-->
+<div class="banner">
+    <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
+    <ul class="socialicons color"> 
+            <li><a href="#pinterest" class="pinterest" target="_blank">pinterest</a></li>
+            <li><a href="#instagram" class="instagram" target="_blank">instagram</a></li>
+            <li><a href="#twitter" class="twitter" target="_blank">twitter</a></li>
+            <li><a href="#fbook" class="facebook" target="_blank">facebook</a></li>
+    </ul>
+</div>
+<!-- End Top Banner -->
+
+
+
+
+<!--Content Box-->
+<div class="content round-shadow">
+   
+    <!--Side Content Filters -->
+    <div class="side-content">
+        <div class="side-filter-item">
+            <form action="">
+                <input type="text" name="search" placeholder="Search..." class="search side-search"/>
+                <button type="submit" class="search-button side-search-button">Search</button>
+            </form>
+        </div>
+        
+        <div class="side-filter-item">
+            <h4>Distance</h4>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <div id="slider"></div>
+            <div class="steps">
+                <span class="tick" style="left: 5%;">|<br /><br />0</span>
+                <span class="tick" style="left: 18%;">|<br /><br />2</span>
+                <span class="tick" style="left: 32%;">|<br /><br />4</span>
+                <span class="tick" style="left: 45%;">|<br /><br />6</span>
+                <span class="tick" style="left: 58%;">|<br /><br />8</span>
+                <span class="tick" style="left: 72%;">|<br /><br />10</span>
+                <span class="tick" style="left: 85%;">|<br /><br />12</span>
+                <span class="tick" style="left: 98%;">|<br /><br />14+</span>
+            </div>
+        </div>
+        
+        <div class="side-filter-item">
+            <h4>Difficulty</h4>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <input type="checkbox" name="difficulty" value="easy" class="regular"/>Easy<br />
+            <input type="checkbox" name="difficulty" value="moderate" class="regular"/>Moderate<br />
+            <input type="checkbox" name="difficulty" value="hard" class="regular"/>Hard<br />
+            <input type="checkbox" name="difficulty" value="expert" class="regular"/>Expert<br />
+        </div>
+         
+        <div class="side-filter-item"> 
+            <h4>Location</h4>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <input type="checkbox" name="location" value="northBay"/>North Bay<br />
+            <input type="checkbox" name="location" value="eastBay"/>East Bay<br />
+            <input type="checkbox" name="location" value="southBay"/>South Bay<br />
+            <input type="checkbox" name="location" value="sanFrancisco"/>San Francisco<br />
+        </div>
+    
+        <div class="side-filter-item">
+        <h4>Rating </h4>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <table class="sprite">
+                <tr>
+                    <th><input type="radio" name="rate" value="five"/></th>
+                    <th class="fiveStar"></th>
+                    <th> &amp; up </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="rate" value="four"/></th>
+                    <th class="fourStar"></th>
+                    <th> &amp; up </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="rate" value="three"/></th>
+                    <th class="threeStar"></th>
+                    <th> &amp; up </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="rate" value="two"/></th>
+                    <th class="twoStar"></th>
+                    <th> &amp; up </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="rate" value="one"/></th>
+                    <th class="oneStar"></th>
+                    <th> &amp; up </th>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="side-filter-item">
+            <h4>Good For</h4>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <input type="checkbox" name="goodFor" value="dogs"/>Dogs<br />
+            <input type="checkbox" name="goodFor" value="bikes"/>Bikes<br />
+            <input type="checkbox" name="goodFor" value="kids"/>Kids<br />
+            <input type="checkbox" name="goodFor" value="running"/>Trail Running<br />
+            <input type="checkbox" name="goodFor" value="camping"/>Camping<br />
+        </div>
+        
+        <div class="side-filter-item">    
+            <h4>Best Season</h4>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <input type="checkbox" name="season" value="dogs"/>Spring<br />
+            <input type="checkbox" name="season" value="bikes"/>Summer<br />
+            <input type="checkbox" name="season" value="kids"/>Fall<br />
+            <input type="checkbox" name="season" value="running"/>Winter<br />
+        </div>
+    <br />
+    <button type="submit" class="search-button side-search-button ">Find me a Hike!</button> 
+    </div>
+    <!--End Side Content and Filters -->
+
+
+
+
+    <!--Main Content-->
+    <div class="verticle-line"></div>
+    <div class="main-content">
+        
+        <!-- Map-->
+        <div class="map">
+            <img src="img/google_map.png" alt="" width="400" height="340"/>
+        </div>
+        <!-- End Map -->
+    
+        <!--Hike List Hyperlinks-->
+        <div class="results-links">
+        <ol> 
+            <li class="result-list-item"><a href="hike_page.html"> 1. Castle Rock State Park</a></li>
+            <li class="result-list-item"><a href="#"> 2. Angel Island State Park</a></li>
+            <li class="result-list-item"><a href="#"> 3. Matt Davis-Steep Ravine Loop</a></li>
+            <li class="result-list-item"><a href="#"> 4. Palomarin to Alamere Falls </a></li>
+            <li class="result-list-item"><a href="#"> 5. Castle Rock State Park</a></li>
+            <li class="result-list-item"><a href="#"> 6. Angel Island State Park</a></li>
+            <li class="result-list-item"><a href="#"> 7. Matt Davis-Steep Ravine Loop</a></li>
+            <li class="result-list-item"><a href="#"> 8. Castle Rock State Park</a></li>
+            <li class="result-list-item"><a href="#"> 9. Angel Island State Park</a></li>
+            <li class="result-list-item"><a href="#"> 10. Matt Davis-Steep Ravine Loop</a></li>
+        </ol>
+        </div>
+        <!-- End Hike List Hyperlinks-->
+    
+    
+    
+        <!-- Hike Summary -->
+        <div class="result-summay">
+            <div class="result-list">
+                <div class="horizontal-line3"></div>
+                <div class="result-image">
+                    <img src="img/ocean.jpg" alt=""/>
+                </div>
+                <div class="result-text">
+                    <h4><a href="hike_page.html">1. Castle Rock State Park</a><span class="fiveStar"></span></h4>
+                    <p><span class="bold">Location: </span> Santa Cruz County</p>
+                    <p><span class="bold">Distance: </span> 4.7 miles </p>
+                    <p><span class="bold">Hiking time: </span> 3 hours</p>
+                    <p><span class="bold">Difficulty: </span> Moderate</p>
+                    <p><span class="bold">Summary: </span> 4.7 mile partial loop near the highest point in the Santa Cruz Mountains. One of the best hikes in the Bay Area, it offers outstanding views west, pretty oaks, woods, and chaparral, and unique sandstone formations.</p>
+                </div>
+            </div>
+        
+            <div class="result-list ">
+                <div class="horizontal-line3"></div>
+                <div class="result-image">
+                    <img src="img/trees.jpg" alt=""/>
+                </div>
+                <div class="result-text">
+                    <h4><a href="hike_page.html">2. Angel Island State Park</a><span class="fourStar"></span></h4>
+                    <p><span class="bold">Location: </span> Marin County</p>
+                    <p><span class="bold">Distance: </span> 5 mile loop </p>
+                    <p><span class="bold">Hiking time: </span> 3 hours</p>
+                    <p><span class="bold">Difficulty: </span> Easy </p>
+                    <p><span class="bold">Summary: </span> Angel Island is a perfect day trip, where the journey to the trailhead rivals the hike for sheer relaxation and beauty. Since you can only reach Angel Island by boat, sit back and enjoy the ferry ride, then climb to the top of the island and back, with incredible 360-degree views nearly the entire trip. Just keep an eye on the clock to make sure you catch that last ferry.</p>
+                </div>
+            </div>
+        
+            <div class="result-list">
+                <div class="horizontal-line3"></div>
+                <div class="result-image">
+                    <img src="img/hike1.jpg" alt=""/>
+                </div>
+                <div class="result-text">
+                    <h4><a href="hike_page.html">3. Matt Davis-Steep Ravine Loop</a><span class="fourStar"></span></h4>
+                    <p><span class="bold">Location: </span> Mount Tamalpais</p>
+                    <p><span class="bold">Distance: </span> 7.3 miles </p>
+                    <p><span class="bold">Hiking time: </span> 4 hours</p>
+                    <p><span class="bold">Difficulty: </span> Moderate</p>
+                    <p><span class="bold">Summary: </span>7.3 mile Mount Tam loop from Stinson Beach to Pantoll and back, through gorgeous woods, high grassy slopes, and a lush steep ravine. Matt Davis Trail is a Bay Area Ridge Trail segment. This 7.3 mile loop hike is moderate, with about 1600 feet in elevation change. Trailhead elevation is around 75 feet. The featured hike climbs to about 1600 feet, then descends back to the trailhead. Some sections of Steep Ravine are well, steep, but the other trails are moderate, with long easy stretches.</p>
+                </div>
+            </div>
+        
+            <div class="result-list">
+                <div class="horizontal-line3"></div>
+                <div class="result-image">
+                    <img src="img/hike4.jpg" alt=""/>
+                </div>
+                <div class="result-text">
+                    <h4><a href="hike_page.html">4. Point Reyes: Palomarin to Alamere Falls </a><span class="threeStar"></span></h4>
+                    <p><span class="bold">Location: </span> Point Reyes National Seashore</p>
+                    <p><span class="bold">Distance: </span> 7.5 miles </p>
+                    <p><span class="bold">Hiking time: </span> 4 hours</p>
+                    <p><span class="bold">Difficulty: </span> Moderate</p>
+                    <p><span class="bold">Summary: </span>This 7.5 mile out and back along the coast of Point Reyes to Alamere Falls includes two tricky scrambles. This 7.5 mile out and back hike is moderate, with about 600 feet in elevation change. Trailhead elevation is about 250 feet, and the hike's highest point is only near 600 feet. Trails are for the most part, very gently graded. If you only go as far as Pelican Lake, I consider the hike easy, but if you continue to Alamere Falls, it's a bit tricky, with two scrambles, one easy and one rough.</p>
+                </div>
+            </div>
+        
+            <div class="result-list">
+                <div class="horizontal-line3"></div>
+                <div class="result-image">
+                    <img src="img/hike3.jpg" alt=""/>
+                </div>
+                <div class="result-text">
+                    <h4><a href="hike_page.html">5. Castle Rock State Park</a><span class="twoStar"></span></h4>
+                    <p><span class="bold">Location: </span> Santa Cruz County</p>
+                    <p><span class="bold">Distance: </span> 4.7 miles </p>
+                    <p><span class="bold">Hiking time: </span> 3 hours</p>
+                    <p><span class="bold">Difficulty: </span> Moderate</p>
+                    <p><span class="bold">Summary: </span> 4.7 mile partial loop near the highest point in the Santa Cruz Mountains. One of the best hikes in the Bay Area, it offers outstanding views west, pretty oaks, woods, and chaparral, and unique sandstone formations.</p>
+                </div>
+            </div>
+        </div>
+        <!--End Hike Summary -->
+    
+    
+    
+    </div>
+    <!-- End Main Content-->
+
+
+
+
+</div>
+<!-- End Content-->
+
+
+
+
+<!--Footer-->
+<div class="footer">
+    <p>&#169; 2013 KarenSuda.com | email: ksudac@gmail.com | About | Disclaimer | Privacy </p>
+    <br />
+</div>
+<!--End Footer-->
+
+
+
+
+
+
+<script type="text/javascript" >
+$("#slider").slider({
+    range: true,
+    min: 0,
+    max: 14,
+    values: [0, 3 ],
+    step: 2,
+    slide : function(event, ui){
+	console.log("previous value:"+ $(this).slider('option', 'value'));
+    },
+	stop: function(event, ui){
+	console.log("Current value:"+ $(this).slider('option', 'value'));
+    }
+});
+</script>
+
+</body>
+</html>

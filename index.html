@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title>Bay Area Hiker</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" href="css/home-styles.css" />
+<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<link rel="shortcut icon" href="img/favicon.png" />
+
+<link href=' http://fonts.googleapis.com/css?family=Open+Sans:bold' rel='stylesheet' type='text/css' />
+<link href=' http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+
+<style type="text/css">
+    h1, h2, h3, h4, h5, h6 { font-family: 'Open Sans Bold', arial, serif; }
+    p, body, html { font-family: 'Open Sans', arial, serif; font-weight:normal !important;}
+</style>
+</head>
+
+<body>
+
+
+
+<!-- Top Banner-->
+<div class="banner">
+    <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
+    <ul class="socialicons color"> 
+            <li><a href="#pinterest" class="pinterest" target="_blank">pinterest</a></li>
+            <li><a href="#instagram" class="instagram" target="_blank">instagram</a></li>
+            <li><a href="#twitter" class="twitter" target="_blank">twitter</a></li>
+            <li><a href="#fbook" class="facebook" target="_blank">facebook</a></li>
+    </ul>
+</div>
+<!-- End Top Banner -->
+
+
+
+<!-- Main Content -->
+<div class="content round-shadow">
+
+
+
+    <!-- Search Bar -->
+    <div class="center">
+        <form action="">
+            <input type="text" name="search" placeholder="Search for the perfect hike..." class="search"/>
+            <a href="results_page.html"><button type="submit" class="search-button">Search</button></a>
+        </form>
+    </div>
+    <!-- End Search Bar -->
+    
+    
+    
+    <!-- Filters -->
+    <div class="center filter-group">
+        <div class="filter-item">
+            <h3>Distance</h3>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <div id="slider"></div>
+            <div class="steps">
+                <span class="tick" style="left: 5%;">|<br /><br />0</span>
+                <span class="tick" style="left: 18%;">|<br /><br />2</span>
+                <span class="tick" style="left: 32%;">|<br /><br />4</span>
+                <span class="tick" style="left: 45%;">|<br /><br />6</span>
+                <span class="tick" style="left: 58%;">|<br /><br />8</span>
+                <span class="tick" style="left: 72%;">|<br /><br />10</span>
+                <span class="tick" style="left: 85%;">|<br /><br />12</span>
+                <span class="tick" style="left: 98%;">|<br /><br />14+</span>
+            </div>
+        </div>
+        
+        <div class="filter-item">
+            <h3>Difficulty</h3>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <input type="checkbox" name="difficulty" value="easy" class="regular" />Easy<br />
+            <input type="checkbox" name="difficulty" value="moderate" class="regular" />Moderate<br />
+            <input type="checkbox" name="difficulty" value="hard" class="regular" />Hard<br />
+            <input type="checkbox" name="difficulty" value="expert" class="regular" />Expert<br />
+        </div>
+         
+         <div class="filter-item"> 
+            <h3>Location</h3>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <input type="checkbox" name="location" value="northBay" />North Bay<br />
+            <input type="checkbox" name="location" value="eastBay" />East Bay<br />
+            <input type="checkbox" name="location" value="southBay" />South Bay<br />
+            <input type="checkbox" name="location" value="sanFrancisco" />San Francisco<br />
+        </div>
+         
+        <div class="filter-item">
+            <h3>Good For</h3>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <input type="checkbox" name="goodFor" value="dogs" />Dogs<br />
+            <input type="checkbox" name="goodFor" value="bikes" />Bikes<br />
+            <input type="checkbox" name="goodFor" value="kids" />Kids<br />
+            <input type="checkbox" name="goodFor" value="running" />Trail Running<br />
+            <input type="checkbox" name="goodFor" value="camping" />Camping<br />
+        </div>
+    
+    
+        <div class="filter-item">
+            <h3>Rating </h3>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <table class="sprite">
+                <tr>
+                    <th><input type="radio" name="rate" value="five"/></th>
+                    <th id="fiveStar"></th>
+                    <th class="rating-text"> &amp; up </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="rate" value="four"/></th>
+                    <th id="fourStar"></th>
+                    <th class="rating-text"> &amp; up </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="rate" value="three"/></th>
+                    <th id="threeStar"></th>
+                    <th class="rating-text"> &amp; up </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="rate" value="two"/></th>
+                    <th id="twoStar"></th>
+                    <th class="rating-text"> &amp; up </th>
+                </tr>
+                <tr>
+                    <th><input type="radio" name="rate" value="one"/></th>
+                    <th id="oneStar"></th>
+                    <th class="rating-text"> &amp; up </th>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="filter-item">    
+            <h3>Best Season</h3>
+            <div class="horizontal-line"></div>
+            <div class="horizontal-line2"></div>
+            <input type="checkbox" name="season" value="dogs"/>Spring<br />
+            <input type="checkbox" name="season" value="bikes"/>Summer<br />
+            <input type="checkbox" name="season" value="kids"/>Fall<br />
+            <input type="checkbox" name="season" value="running"/>Winter<br />
+        </div>
+    </div>
+    <!-- End Filters-->
+
+ 
+    <!--Submit filters button to search-->
+    <a href="results_page.html"><button type="submit" class="search-button find-button">Find me a Hike!</button></a>
+
+
+
+</div> <!--end content-->
+
+<!--Footer-->
+<div class="footer">
+    <p>&#169; 2013 KarenSuda.com | email: ksudac@gmail.com | About | Disclaimer | Privacy </p>
+</div>
+<!--End Footer-->
+
+<script type="text/javascript" >
+$("#slider").slider({
+    range: true,
+    min: 0,
+    max: 14,
+    values: [0, 3 ],
+    step: 2,
+    slide : function(event, ui){
+	console.log("previous value:"+ $(this).slider('option', 'value'));
+    },
+	stop: function(event, ui){
+	console.log("Current value:"+ $(this).slider('option', 'value'));
+    }
+});
+</script>
+
+</body>
+</html>
