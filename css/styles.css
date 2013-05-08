@@ -30,6 +30,15 @@ h4{
 	font-size: 14pt;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans Bold', arial, serif;
+}
+
+p, body, html {
+	font-family: 'Open Sans', arial, serif;
+	font-weight:normal !important;
+}
+
 .banner{
 	width:1000px;
 	height:100px;
@@ -57,6 +66,10 @@ h4{
 	margin-right: auto;
 	padding-bottom: 100px;
 	padding-right: 0;
+}
+
+.hike-content{
+    height:auto !important;
 }
 
 .main-content{
@@ -114,6 +127,11 @@ h4{
 	text-decoration: none;
 }
 
+.search-button > a {
+	text-decoration: none;
+	color: white;
+}
+
 .search-button:hover {
 	border-top-color: #e8892f;
 	background: #e8892f;
@@ -135,12 +153,9 @@ h4{
 }
 
 .side-search-button{
-	margin:0;
 	padding: 4px 10px;
 	font-size: 10px;
 }
-
-
 
 .find-button{
 	float:left;
@@ -250,24 +265,6 @@ img{
 	text-align: center !important;
 }
 
-
-#fiveStar, #fourStar, #threeStar, #twoStar, #oneStar  {
-	width: 73px;
-	height: 14px;
-	background: url('../img/star-review.png');
-	background-repeat: no-repeat;
-	display: block;
-	cursor: pointer;
-}
-
-
-#fiveStar {background-position: 0 -67px;}
-#fourStar {background-position: 0 -53px;}
-#threeStar {background-position: 0 -40px;}
-#twoStar {background-position: 0 -27px;}
-#oneStar {background-position: 0 -14px;}
-
-
 .fiveStar, .fourStar, .threeStar, .twoStar, .oneStar  {
 	width: 73px;
 	height: 14px;
@@ -308,7 +305,6 @@ ul.socialicons li a.pinterest:hover { background-position: -38px -1053px; }
 
 .ui-slider a:focus {
 	outline: solid thin #e8882f;
-	box-shadow: 0px 0px 10px #a9a9a9;
 }
 
 .tick { 
@@ -408,13 +404,11 @@ input[type=text]{
 
 input[type=text]:focus {
 	outline: solid thin #e8882f;
-	box-shadow: 0px 0px 10px #a9a9a9;
 }
 
 input[type=checkbox]:hover:active{
 	outline: solid thin #e8882f;
-	box-shadow: 0px 0px 10px #a9a9a9;
-	
+	-moz-appearance: none;
 }
 
 .rating-text{
