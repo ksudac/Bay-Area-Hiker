@@ -82,7 +82,8 @@
             <input type="checkbox" name="difficulty" value="easy" class="regular" />Easy<br />
             <input type="checkbox" name="difficulty" value="moderate" class="regular" />Moderate<br />
             <input type="checkbox" name="difficulty" value="hard" class="regular" />Hard<br />
-            <input type="checkbox" name="difficulty" value="expert" class="regular" />Expert<br />
+            <div id="expert-comment"></div>
+            <input type="checkbox" name="difficulty" value="expert" class="regular" id="expert"/>Expert<br />
         </div>
          
          <div class="filter-item"> 
@@ -99,10 +100,12 @@
             <h3>Good For</h3>
             <div class="horizontal-line"></div>
             <div class="horizontal-line2"></div>
-            <input type="checkbox" name="goodFor" value="dogs" />Dogs<br />
+            <div id="dog-comment"></div>
+            <input type="checkbox" name="goodFor" value="dogs" id="best-dogs"/>Dogs<br />
             <input type="checkbox" name="goodFor" value="bikes" />Bikes<br />
             <input type="checkbox" name="goodFor" value="kids" />Kids<br />
-            <input type="checkbox" name="goodFor" value="running" />Trail Running<br />
+            <div id="run-comment"></div>
+            <input type="checkbox" name="goodFor" value="running" id="best-run"/>Trail Running<br />
             <input type="checkbox" name="goodFor" value="camping" />Camping<br />
         </div>
     
@@ -144,10 +147,10 @@
             <h3>Best Season</h3>
             <div class="horizontal-line"></div>
             <div class="horizontal-line2"></div>
-            <input type="checkbox" name="season" value="dogs"/>Spring<br />
-            <input type="checkbox" name="season" value="bikes"/>Summer<br />
-            <input type="checkbox" name="season" value="kids"/>Fall<br />
-            <input type="checkbox" name="season" value="running"/>Winter<br />
+            <input type="checkbox" name="season" value="spring"/>Spring<br />
+            <input type="checkbox" name="season" value="summer"/>Summer<br />
+            <input type="checkbox" name="season" value="fall"/>Fall<br />
+            <input type="checkbox" name="season" value="winter"/>Winter<br />
         </div>
     </div>
     <!-- End Filters-->
@@ -167,8 +170,7 @@
 <!--End Footer-->
 
 <script type="text/javascript" src="js/slider.js"></script>
-
-
+<script type="text/javascript" src="js/BAhiker.js"></script>
 
 </body>
 </html>

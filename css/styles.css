@@ -477,3 +477,14 @@ input[type=checkbox]:hover:active{
 	margin: 14px;
 	padding: 14px 0;
 }
+
+#dog-comment, #run-comment, #expert-comment{
+  display: none;
+  float: right;
+  position: absolute;
+  background-color: #E8E8E8;
+  z-index: 10;
+  padding: 5px;
+  font-size: 8pt;
+  font-weight: bold;
+}
